@@ -8,7 +8,7 @@ types of errors and treatments ( 上げて最後に )
     - Se ocorrer uma exceção em qualquer uma das cláusulas e for não tratada, a exceção é salva temporariamente.
      - A cláusula finally É executado. Se houver uma exceção salva, ela será levantada novamente no final do finally cláusula.
       - Se a cláusula finally gerar outra exceção, a exceção salva é definida como o contexto da nova exceção. 
-       - Se a cláusula finally executar um return, break ou continue, a exceção salva é descartada:
+       - Se a cláusula finally executar um return, break ou continue, a exceção salva é descartada
 
 # Se uma cláusula finally estiver presente, a cláusula finally será executada como a última tarefa antes da conclusão da instrução try. A cláusula finally executa se a instrução try produz uma exceção.
 
@@ -24,6 +24,8 @@ except ZeroDivisionError:
 finally:
     print("Este bloco é sempre executado.")
 ```
+- O bloco finally garante que o arquivo seja fechado, independentemente de ocorrerem exceções ou não.
+- 
 # Raise
 
 A instrução raise permite ao programador forçar a ocorrência de um determinado tipo de exceção. Por exemplo:
