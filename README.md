@@ -1,13 +1,14 @@
 # Raising-errors
-types of errors and treatments
+types of errors and treatments ( 上げて最後に ) 
 
 # finally
+- A instrução try possui outra cláusula opcional, cuja finalidade é permitir a implementação de ações de limpeza, que sempre devem ser executadas independentemente da ocorrência de exceções
   - Se finally estiver presente, ele especifica um manipulador de ‘limpeza’.
-- O try cláusula é executada, incluindo qualquer except e else cláusulas.
- - Se ocorrer uma exceção em qualquer uma das cláusulas e for não tratada, a exceção é salva temporariamente.
-  - A cláusula finally É executado. Se houver uma exceção salva, ela será levantada novamente no final do finally cláusula.
-  - Se a cláusula finally gerar outra exceção, a exceção salva é definida como o contexto da nova exceção. 
-  - Se a cláusula finally executar um return, break ou continue, a exceção salva é descartada:
+   - O try cláusula é executada, incluindo qualquer except e else cláusulas.
+    - Se ocorrer uma exceção em qualquer uma das cláusulas e for não tratada, a exceção é salva temporariamente.
+     - A cláusula finally É executado. Se houver uma exceção salva, ela será levantada novamente no final do finally cláusula.
+      - Se a cláusula finally gerar outra exceção, a exceção salva é definida como o contexto da nova exceção. 
+       - Se a cláusula finally executar um return, break ou continue, a exceção salva é descartada:
 
 # Se uma cláusula finally estiver presente, a cláusula finally será executada como a última tarefa antes da conclusão da instrução try. A cláusula finally executa se a instrução try produz uma exceção.
 
