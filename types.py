@@ -47,3 +47,18 @@ try:
 except NameError:
     print('An exception flew by!')
     raise
+/////////////////////////////////////////////////////////////
+
+frase = 'Olha só que, coisa interessante'
+lista_palavras = frase.split(',')
+try:
+    lista_fixed = []
+    for i, frase in enumerate(lista_palavras):
+        lista_fixed[i] = lista_fixed[i].strip()
+except IndexError:
+    print('ola mundo')
+
+print(lista_palavras)
+
+>>> ola mundo # erro tratado
+['Olha só que', ' coisa interessante']
